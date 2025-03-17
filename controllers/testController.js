@@ -1,6 +1,6 @@
 const db = require("../database/conexion.js");
 
-class teacherController {
+class testController {
   constructor() {}
 
   consultar(req, res) {
@@ -17,4 +17,4 @@ class teacherController {
   }
 }
 
-module.exports = new teacherController();
+module.exports = new testController();

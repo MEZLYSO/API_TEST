@@ -1,3 +1,5 @@
+const db = require("../database/conexion.js");
+
 class StudentsController {
   constructor() {}
 
@@ -6,7 +8,16 @@ class StudentsController {
     res.json({ msg: `Consulta desde Controller -> ${id}` });
   }
   ingresar(req, res) {
-    res.json({ msg: "ingresar desde Controller" });
+    try {
+      db.query("SELECT * FROM Students", (err, rows) => {
+        if (err) {
+          res.status(400).send(err);
+        }
+        res.status(200).json(rows);
+      });
+    } catch (err) {
+      res.status(500).send(err.message);
+    }
   }
   actualizar(req, res) {
     res.json({ msg: "Actualizar desde Controller" });

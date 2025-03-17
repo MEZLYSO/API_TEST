@@ -8,7 +8,8 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  res.json({ msg: "Ingreso de estudiantes" });
+  //res.json({ msg: "Ingreso de estudiantes" });
+  studentsController.ingresar;
 });
 
 router.put("/", (req, res) => {

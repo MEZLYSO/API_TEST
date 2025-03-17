@@ -14,5 +14,14 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mysql2": "^3.13.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MEZLYSO/API_TEST.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MEZLYSO/API_TEST/issues"
+  },
+  "homepage": "https://github.com/MEZLYSO/API_TEST#readme"
 }
