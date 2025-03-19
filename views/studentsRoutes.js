@@ -23,7 +23,7 @@ router.delete("/", (req, res) => {
 // Un estudiante
 
 router
-  .route("/:id")
+  .route("/?name=:name")
   .get(studentsController.consultar)
   .post(studentsController.ingresar)
   .put(studentsController.actualizar)

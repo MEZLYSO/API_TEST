@@ -13,9 +13,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "form-valid-sic": "^1.0.3",
     "mysql2": "^3.13.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MEZLYSO/API_TEST.git"

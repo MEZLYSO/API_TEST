@@ -4,8 +4,8 @@ class StudentsController {
   constructor() {}
 
   consultar(req, res) {
-    const { id } = req.params;
-    res.json({ msg: `Consulta desde Controller -> ${id}` });
+    const { name } = req.params;
+    res.json({ msg: `Consulta desde Controller -> ${name}` });
   }
   ingresar(req, res) {
     try {
